@@ -10,6 +10,14 @@
 	<name>API Gateway</name>
 	<description>API gateway in microservices sample project</description>
 
+	 <distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>GitHub Kristin0 Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/Kristin0/api-gateway</url>
+   </repository>
+</distributionManagement>
+	
 	<developers>
 		<developer>
 			<name>Vijayendra Mudigal</name>
