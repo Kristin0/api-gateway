@@ -123,6 +123,16 @@
 	    <finalName>api-gateway</finalName>
 		<plugins>
 			<plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>/usr/lib/jvm/jre-1.8.0-openjdk</executable>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
