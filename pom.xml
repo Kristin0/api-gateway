@@ -133,6 +133,30 @@
         </configuration>
       </plugin>
     
+			 <plugin>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>deploy-file</goal>
+                    </goals>
+                    <phase>deploy</phase>
+                    <configuration>
+                        <repositoryId>nexus-site</repositoryId>
+                        <url>http://nexus.some.where/nexus-2/content/repositories/releases</url>
+                        <file>${build.directory}/${project.build.finalName}.${project.packaging}</file>
+                        <generatePom>false</generatePom>
+                        <pomFile>pom.xml</pomFile>
+                        <version>4.5.1</version>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+			
+			
+			
+			
+			
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
